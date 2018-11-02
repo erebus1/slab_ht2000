@@ -5,8 +5,11 @@ README
 1. make
 2. pipenv install
 3. [optional] to identify interface:
+    
     3.1 udevadm monitor --udev
+    
     3.2 plug in co2 meter
+    
     3.3 get /hidraw/hidraw[x] 
 4. Plug-in co2 meter (if not yet)
 5. export API_KEY=<DD-access-key>
