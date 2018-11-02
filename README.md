@@ -1,6 +1,20 @@
 README
 ======
 
+## Startup
+1. make
+2. pipenv install
+3. [optional] to identify interface:
+    3.1 udevadm monitor --udev
+    3.2 plug in co2 meter
+    3.3 get /hidraw/hidraw[x] 
+4. Plug-in co2 meter (if not yet)
+5. export API_KEY=<DD-access-key>
+6. export HID=<hid path from 3rd step>  (e.g. /hidraw/hidraw/1)
+7. sudo -E bash -c 'python main.py' (or add in supervisor)
+
+
+=========================================
 Reverse engineered userspace driver for SLAB HT2000 CO2, temperature and
 relative humidity (RH) data logger made by Dongguan Xintai Instrument Co.
 

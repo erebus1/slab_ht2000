@@ -6,7 +6,7 @@ interval=4
 watch -pbn$interval '
 
 	# Human interface device identified by OS, might be different number
-	device=/dev/hidraw4
+	device=/dev/hidraw1
 
 	logFileName=$(date +%Y-%m-%d).csv
 	if [ $logFileName!=$oldLogFileName ]
