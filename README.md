@@ -12,8 +12,8 @@ README
     
     3.3 get /hidraw/hidraw[x] 
 4. Plug-in co2 meter (if not yet)
-5. export API_KEY=[DD-access-key]
-6. export HID=<hid path from 3rd step>  (e.g. /hidraw/hidraw/1)
+5. export DATADOG_TOKEN=[DD-access-key]
+6. export HID=<hid path from 3rd step>  (e.g. /dev/hidraw/1)
 7. sudo -E bash -c 'python main.py' (or add in supervisor)
 
 
